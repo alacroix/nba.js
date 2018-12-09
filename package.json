@@ -1,14 +1,14 @@
 {
-  "name": "nba.js",
-  "version": "0.6.1",
+  "name": "@thebestgame/nba.js",
+  "version": "0.6.2",
   "description": "Interact with current and historical NBA stats, scores, and data.",
   "keywords": [
     "nba",
     "basketball"
   ],
-  "homepage": "https://github.com/kshvmdn/nba.js#readme",
+  "homepage": "https://github.com/alacroix/nba.js#readme",
   "bugs": {
-    "url": "https://github.com/kshvmdn/nba.js/issues"
+    "url": "https://github.com/alacroix/nba.js/issues"
   },
   "license": "MIT",
   "author": {
@@ -19,13 +19,13 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kshvmdn/nba.js.git"
+    "url": "git+https://github.com/alacroix/nba.js.git"
   },
   "scripts": {
     "clean": "rimraf lib/",
     "build": "npm run clean && babel src/ -d lib/",
     "build:watch": "npm run build -- -w",
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run build",
     "lint": "eslint src/",
     "test": "npm run lint && mocha --compilers js:babel-core/register --colors --bail --reporter spec $(find src/ -name \"*.spec.js\") --timeout 30000",
     "test:coverage": "istanbul cover -x *.spec.js _mocha -- --compilers js:babel-core/register --colors --reporter dot $(find src/ -name \"*.spec.js\")  --timeout 30000"

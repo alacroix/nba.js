@@ -31,7 +31,8 @@
     "test:coverage": "istanbul cover -x *.spec.js _mocha -- --compilers js:babel-core/register --colors --reporter dot $(find src/ -name \"*.spec.js\")  --timeout 30000"
   },
   "dependencies": {
-    "got": "^8.0.0"
+    "got": "^8.0.0",
+    "user-agents": "1.0.100"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

@@ -1,6 +1,6 @@
 {
   "name": "@thebestgame/nba.js",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Interact with current and historical NBA stats, scores, and data.",
   "keywords": [
     "nba",

@@ -25,7 +25,9 @@ export default function fetch(endpoint = "", opts) {
         referer: "http://stats.nba.com/",
         "user-agent": randomUserAgent.random().toString()
       },
-      json: false
+      json: false,
+      timeout: 5000,
+      retry: 0
     },
     opts || {}
   );

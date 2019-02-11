@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "got": "^8.0.0",
+    "tunnel": "0.0.6",
     "user-agents": "1.0.100"
   },
   "devDependencies": {
